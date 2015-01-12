@@ -12,6 +12,8 @@ Router.map(function() {
 
   this.route("users", function() {
     this.route("new");
+    this.route("reset");
+    this.route("email_token");
   });
 });
 
