@@ -1,7 +1,8 @@
 # Markoneauth-frontend
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is all the frontend code for the MarkOne Auth app. Most of the work is inside of the /app/ folder. The entire project was built in Ember.js, in traditional Ember style.
+
+**This project is not required to run the app. This is purely to check work, see the code as it exists.**
 
 ## Prerequisites
 
@@ -28,11 +29,6 @@ You will need the following things properly installed on your computer.
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
 
 ### Building
 
