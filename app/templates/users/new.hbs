@@ -1,0 +1,39 @@
+<h3>New user</h3>
+
+<form {{action "save" on="submit"}}>
+  <p>
+    <label>E-mail:
+      {{input value=model.email}}
+    </label>
+    {{#each error in model.errors.email}}
+      <br>
+      <div class='error' style='color:red'>
+        {{error.message}}
+      </div>
+    {{/each}}
+  </p>
+  <p>
+    <label>Password:
+      {{input value=model.password}}
+    </label>
+    {{#each error in model.errors.password}}
+      <br>
+      <div class='error' style='color:red'>
+        {{error.message}}
+      </div>
+    {{/each}}
+  </p>
+  <p>
+    <label>Password Confirmation:
+      {{input value=model.passwordConfirmation}}
+    </label>
+    {{#each error in model.errors.passwordConfirmation}}
+      <br>
+      <div class='error' style='color:red'>
+        {{error.message}}
+      </div>
+    {{/each}}
+  </p>
+  <input type="submit" value="Create Account"/>
+  <button {{action "cancel"}}>Cancel</button>
+</form>
