@@ -1,0 +1,15 @@
+<h3>Reset Password</h3>
+
+<form {{action "reset" on="submit"}}>
+  <p>
+    <label>Password:
+      {{input value=password}}
+    </label>
+  </p>
+  <p>
+    <label>Password Confirmation:
+      {{input value=password_confirmation}}
+    </label>
+  </p>
+  <input type="submit" value="Reset Password"/>
+</form>
