@@ -18,7 +18,7 @@ export default Ember.Controller.extend({
         type: 'put',
         data: formData
       }).then(function() {
-        _this.transitionToRoute('index');
+        _this.transitionToRoute('login');
       });
       return false;
     }
