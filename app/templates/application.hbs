@@ -1,7 +1,7 @@
 <h2 id=''>MarkOne Auth</h2>
 
 {{#link-to 'index'}}Home{{/link-to}}
-{{#link-to 'protected'}}Protected{{/link-to}}
+{{#link-to 'users.index'}}All Users{{/link-to}}
 
 {{#if session.isAuthenticated}}
   <button {{ action 'invalidateSession' }}>Logout</button>
